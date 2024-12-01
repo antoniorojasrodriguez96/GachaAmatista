@@ -9,7 +9,7 @@ BANNERS  = {
               }
       }
 if $game_variables[4964] < 1
-      Kernel.pbMessage("¡Hay nuevo Banner Especial!")
+      Kernel.pbMessage("¡Hay nuevo un Banner Especial!")
       Kernel.pbMessage("Has recibido 3 tiradas para celebrarlo.")
       $PokemonGlobal.gachaCoins += 3
       $game_variables[4964] = 1
