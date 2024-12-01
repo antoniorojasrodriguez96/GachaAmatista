@@ -1,7 +1,9 @@
 prob = rand(100)
+objrandom1 = rand(11)
+objrandom2 = rand(15)
 case prob
 when (0...35) # Tier 1 con un 35%
-  case rand(11)
+  case objrandom1
   when 0 then itemReward(:BELUEBERRY, 1)
   when 1 then itemReward(:WACANBERRY, 1)
   when 2 then itemReward(:WEPEARBERRY, 1)
@@ -15,7 +17,7 @@ when (0...35) # Tier 1 con un 35%
   when 10 then itemReward(:ZAPPLATE, 1)
   end
 when (35...65) # Tier 2 con un 30%
-  case rand(15)
+  case objrandom2
   when 0 then itemReward(:TM24, 2)
   when 1 then itemReward(:TM25, 2)
   when 2 then itemReward(:TM57, 2)
