@@ -1,7 +1,3 @@
-if game_switches[3666] == false
-      $PokemonGlobal.gachaCoins += 10
-      game_switches[3666] = true
-end
 BANNERS  = {
       "banner_1" => {
               "name" => "Especial lanzamiento Regionales",
