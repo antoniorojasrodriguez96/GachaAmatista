@@ -44,6 +44,4 @@
     pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON, :ELECTROFURIA]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 5)
-  else
-    itemReward(:RARECANDY, 10)
   end
