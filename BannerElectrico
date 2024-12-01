@@ -1,71 +1,68 @@
 prob = rand(100)
 case prob
-when (0...3) # Tier 1 con un 33%
+when (0...5) # Tier 1 con un 50%
   itemReward(:BELUEBERRY, 1)
-when (3...6) # Tier 1 con un 33%
-  itemReward(:WACANBERRY, 1)
-when (6...9) # Tier 1 con un 33%
-  itemReward(:WEPEARBERRY, 1)
-when (9...12) # Tier 1 con un 33%
-  itemReward(:ELECTRICGEM, 1)
-when (12...15) # Tier 1 con un 33%
+when (5...10) # Tier 1 con un 50%
   itemReward(:THUNDERSTONE, 1)
-when (15...18) # Tier 1 con un 33%
-  itemReward(:YELLOWNECTAR, 1)
-when (18...21) # Tier 1 con un 33%
+when (10...15) # Tier 1 con un 50%
   itemReward(:ELECTRICMEMORY, 1)
-when (21...24) # Tier 1 con un 33%
- itemReward(:SHOCKDRIVE, 1)
-when (24...27) # Tier 1 con un 33%
+when (15...20) # Tier 1 con un 50%
  itemReward(:MAGNET, 1)
-when (27...30) # Tier 1 con un 33%
- itemReward(:CELLBATTERY, 1)
-when (30...33) # Tier 1 con un 33%
- itemReward(:ZAPPLATE, 1)
-when (33...35) # Tier 2 con un 30%
+when (20...25) # Tier 2 con un 50%
  itemReward(:TM24, 2)
-when (35...37) # Tier 2 con un 30%
- itemReward(:TM25, 2)
-when (37...39) # Tier 2 con un 30%
- itemReward(:TM57, 2)
-when (39...41) # Tier 2 con un 30%
+when (25...30) # Tier 2 con un 50%
  itemReward(:TM72, 2)
-when (41...43) # Tier 2 con un 30%
- itemReward(:TM73, 2)
-when (43...45) # Tier 2 con un 30%
+when (30...35) # Tier 2 con un 50%
  itemReward(:TM93, 2)
-when (45...47) # Tier 2 con un 30%
-  itemReward(:TM120, 2)
-when (47...49) # Tier 2 con un 30%
+when (35...40) # Tier 2 con un 50%
   itemReward(:TM121, 2)
-when (49...51) # Tier 2 con un 30%
+when (40...45) # Tier 2 con un 50%
   itemReward(:TM167, 2)
-when (51...53) # Tier 2 con un 30%
-  itemReward(:TM168, 2)
-when (53...55) # Tier 2 con un 30%
-  itemReward(:TM210, 2)
-when (55...57) # Tier 2 con un 30%
-  itemReward(:TM223, 2)
-when (57...59) # Tier 2 con un 30%
-  itemReward(:TM229, 2)
-when (59...61) # Tier 2 con un 30%
-  itemReward(:TM249, 2)
-when (61...63) # Tier 2 con un 30%
+when (45...50) # Tier 2 con un 50%
   itemReward(:TM250, 2)
-  when (63...76) #Tier 3 con un 25%
-    pokes = [:PICHU, :MAGNEMITE]
+when (50...90) #Tier 3 con un 40%
+    pokes = [:MAGNEMITE, :VOLTORB, :PICHU, :ELECTRIKE, :EMOLGA]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (76...88) #Tier 3 con un 25%
-    pokes = [:STUNFISK, :HELIOPTILE]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (88...98) #Tier 4 con un 10%
-    pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
+when (90...98) #Tier 4 con un 8%
+    pokes = [:SANDYSHOCKS, :DRACOZOLT, :IRONHANDS]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (98...100) #Tier 5 con un 2%
-    pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON]
+when (98...100) #Tier 5 con un 2%
+    pokes = [:RAIKOU]
     result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  end
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
+end
+
+# LISTA DE OBJETOS: 
+#:BELUEBERRY
+#:WACANBERRY
+#:WEPEARBERRY
+#:ELECTRICGEM
+#:THUNDERSTONE
+#:YELLOWNECTAR
+#:ELECTRICMEMORY
+#:SHOCKDRIVE
+#:MAGNET
+#:CELLBATTERY
+#:ZAPPLATE
+#TM24
+#TM25
+#TM57
+#TM72
+#TM73
+#TM93
+#TM120
+#TM121
+#TM167
+#TM168
+#TM210
+#TM223
+#TM229
+#TM249
+#TM250
+
+# LISTA DE POKEMON:
+# [:MAGNEMITE,:PICHU,:VOLTORB,:ELEKID,:CHINCHOU,:MAREEP,:ELECTRIKE,:PLUSLE,:MINUN,:SHINX,:PACHIRISU,:ROTOM,:BLITZLE,:EMOLGA,:JOLTIK,:TYNAMO,:STUNFISK,:HELIOPTILE,:DEDENNE,:GRUBBIN,:TOGEDEMARU,:YAMPER,:TOXEL,:PINCURCHIN,:MORPEKO,:PAWMI,:TADBULB,:WATTREL,:VOLTORB,:ROOKIDEEB,:CHARGOO,:MANTYKEB]
+# [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
+# [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON]
