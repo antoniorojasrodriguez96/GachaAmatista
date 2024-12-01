@@ -8,16 +8,16 @@ prob = rand(100)
     pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),2)
-  when (75...87) #Tier 3 con un 12%
+  when (75...85) #Tier 3 con un 10%
     pokes = [:CHINCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGOB, :DODHOST, :VOLTANIX, :GIBLEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (87...99) #Tier 4 con un 12%
+  when (85...95) #Tier 4 con un 10%
     pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (99...100) #Tier 5 con un 1%
-    result = rand(10)
+  when (95...100) #Tier 5 con un 5%
+    result = rand(6)
     if (0..1).include?(result)
       poke = PokeBattle_Pokemon.new(:CHINCHARB,5,$Trainer)
       poke.makeShiny
