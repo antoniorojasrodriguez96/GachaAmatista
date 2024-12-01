@@ -35,17 +35,17 @@ when (35...65) # Tier 2 con un 30%
 when (65...77) # Tier 3 con un 25%
   pokes = [:JOLTIK, :TYNAMO, :STUNFISK, :HELIOPTILE, :DEDENNE, :GRUBBIN, :TOGEDEMARU, :YAMPER, :TOXEL, :PINCURCHIN, :MORPEKO, :PAWMI, :TADBULB, :WATTREL, :VOLTORB, :ROOKIDEEB, :CHARGOO, :MANTYKEB]
   result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
+  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
 when (77...90) # Tier 3 con un 25%
   pokes = [:MAGNEMITE, :PICHU, :VOLTORB, :ELEKID, :CHINCHOU, :MAREEP, :ELECTRIKE, :PLUSLE, :MINUM, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE, :EMOLGA]
   result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
+  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
 when (90...98) # Tier 4 con un 8%
   pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
   result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 4)
+  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
 when (98...100) # Tier 5 con un 2%
   pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON, :ELECTROFURIA]
   result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 5)
+  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
 end
