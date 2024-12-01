@@ -29,7 +29,7 @@ when (90...98) #Tier 4 con un 8%
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
 when (98...100) #Tier 5 con un 2%
-    pokes = [:SUICUNE, :GLASTRIER, :REGICE]
+    pokes = [:SUICUNE, :GLASTRIER, :REGICE, :ARTICUNO]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
 end
