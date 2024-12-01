@@ -1,39 +1,57 @@
 prob = rand(100)
-objrandom1 = rand(11)
-objrandom2 = rand(15)
 case prob
-when (0...35) # Tier 1 con un 35%
-  case objrandom1
-  when 0 then itemReward(:BELUEBERRY, 1)
-  when 1 then itemReward(:WACANBERRY, 1)
-  when 2 then itemReward(:WEPEARBERRY, 1)
-  when 3 then itemReward(:ELECTRICGEM, 1)
-  when 4 then itemReward(:THUNDERSTONE, 1)
-  when 5 then itemReward(:YELLOWNECTAR, 1)
-  when 6 then itemReward(:ELECTRICMEMORY, 1)
-  when 7 then itemReward(:SHOCKDRIVE, 1)
-  when 8 then itemReward(:MAGNET, 1)
-  when 9 then itemReward(:CELLBATTERY, 1)
-  when 10 then itemReward(:ZAPPLATE, 1)
-  end
-when (35...65) # Tier 2 con un 30%
-  case objrandom2
-  when 0 then itemReward(:TM24, 2)
-  when 1 then itemReward(:TM25, 2)
-  when 2 then itemReward(:TM57, 2)
-  when 3 then itemReward(:TM72, 2)
-  when 4 then itemReward(:TM73, 2)
-  when 5 then itemReward(:TM93, 2)
-  when 6 then itemReward(:TM120, 2)
-  when 7 then itemReward(:TM121, 2)
-  when 8 then itemReward(:TM167, 2)
-  when 9 then itemReward(:TM168, 2)
-  when 10 then itemReward(:TM210, 2)
-  when 11 then itemReward(:TM223, 2)
-  when 12 then itemReward(:TM229, 2)
-  when 13 then itemReward(:TM249, 2)
-  when 14 then itemReward(:TM250, 2)
-  end
+when (0...3) # Tier 1 con un 35%
+  itemReward(:BELUEBERRY, 1)
+when (4...6) # Tier 1 con un 35%
+  itemReward(:WACANBERRY, 1)
+when (7...10) # Tier 1 con un 35%
+  itemReward(:WEPEARBERRY, 1)
+when (11...14) # Tier 1 con un 35%
+  itemReward(:ELECTRICGEM, 1)
+when (15...17) # Tier 1 con un 35%
+  itemReward(:THUNDERSTONE, 1)
+when (18...20) # Tier 1 con un 35%
+  itemReward(:YELLOWNECTAR, 1)
+when (21...23) # Tier 1 con un 35%
+  itemReward(:ELECTRICMEMORY, 1)
+when (24...26) # Tier 1 con un 35%
+ itemReward(:SHOCKDRIVE, 1)
+when (27...29) # Tier 1 con un 35%
+ itemReward(:MAGNET, 1)
+when (30...32) # Tier 1 con un 35%
+ itemReward(:CELLBATTERY, 1)
+when (33...35) # Tier 1 con un 35%
+ itemReward(:ZAPPLATE, 1)
+when (35...36) # Tier 2 con un 30%
+ itemReward(:TM24, 2)
+when (37...38) # Tier 2 con un 30%
+ itemReward(:TM25, 2)
+when (39...40) # Tier 2 con un 30%
+ itemReward(:TM57, 2)
+when (41...42) # Tier 2 con un 30%
+ itemReward(:TM72, 2)
+when (43...44) # Tier 2 con un 30%
+ itemReward(:TM73, 2)
+when (45...46) # Tier 2 con un 30%
+ itemReward(:TM93, 2)
+when (47...48) # Tier 2 con un 30%
+  itemReward(:TM120, 2)
+when (49...50) # Tier 2 con un 30%
+  itemReward(:TM121, 2)
+when (51...52) # Tier 2 con un 30%
+  itemReward(:TM167, 2)
+when (53...54) # Tier 2 con un 30%
+  itemReward(:TM168, 2)
+when (55...56) # Tier 2 con un 30%
+  itemReward(:TM210, 2)
+when (57...58) # Tier 2 con un 30%
+  itemReward(:TM223, 2)
+when (59...60) # Tier 2 con un 30%
+  itemReward(:TM229, 2)
+when (61...62) # Tier 2 con un 30%
+  itemReward(:TM249, 2)
+when (63...64) # Tier 2 con un 30%
+  itemReward(:TM250, 2)
 when (65...70) # Tier 3 con un 25%
   pokes = [:JOLTIK, :TYNAMO, :STUNFISK, :HELIOPTILE, :DEDENNE, :MANTYKEB]
   result = pokes[rand(pokes.length)]
