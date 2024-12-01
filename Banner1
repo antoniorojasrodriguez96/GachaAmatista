@@ -1,7 +1,3 @@
-if $game_switches[3666] == false
-      $PokemonGlobal.gachaCoins += 10
-      $game_switches[3666] = true
-end
 prob = rand(100)
   case prob
   when (0...45) #Tier 1 con un 45%
