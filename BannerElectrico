@@ -1,78 +1,93 @@
 prob = rand(100)
 case prob
-when (0...3) # Tier 1 con un 35%
+when (0...3) # Tier 1 con un 33%
   itemReward(:BELUEBERRY, 1)
-when (4...6) # Tier 1 con un 35%
+when (3...6) # Tier 1 con un 33%
   itemReward(:WACANBERRY, 1)
-when (7...10) # Tier 1 con un 35%
+when (6...9) # Tier 1 con un 33%
   itemReward(:WEPEARBERRY, 1)
-when (11...14) # Tier 1 con un 35%
+when (9...12) # Tier 1 con un 33%
   itemReward(:ELECTRICGEM, 1)
-when (15...17) # Tier 1 con un 35%
+when (12...15) # Tier 1 con un 33%
   itemReward(:THUNDERSTONE, 1)
-when (18...20) # Tier 1 con un 35%
+when (15...18) # Tier 1 con un 33%
   itemReward(:YELLOWNECTAR, 1)
-when (21...23) # Tier 1 con un 35%
+when (18...21) # Tier 1 con un 33%
   itemReward(:ELECTRICMEMORY, 1)
-when (24...26) # Tier 1 con un 35%
+when (21...24) # Tier 1 con un 33%
  itemReward(:SHOCKDRIVE, 1)
-when (27...29) # Tier 1 con un 35%
+when (24...27) # Tier 1 con un 33%
  itemReward(:MAGNET, 1)
-when (30...32) # Tier 1 con un 35%
+when (27...30) # Tier 1 con un 33%
  itemReward(:CELLBATTERY, 1)
-when (33...35) # Tier 1 con un 35%
+when (30...33) # Tier 1 con un 33%
  itemReward(:ZAPPLATE, 1)
-when (35...36) # Tier 2 con un 30%
+when (33...35) # Tier 2 con un 30%
  itemReward(:TM24, 2)
-when (37...38) # Tier 2 con un 30%
+when (35...37) # Tier 2 con un 30%
  itemReward(:TM25, 2)
-when (39...40) # Tier 2 con un 30%
+when (37...39) # Tier 2 con un 30%
  itemReward(:TM57, 2)
-when (41...42) # Tier 2 con un 30%
+when (39...41) # Tier 2 con un 30%
  itemReward(:TM72, 2)
-when (43...44) # Tier 2 con un 30%
+when (41...43) # Tier 2 con un 30%
  itemReward(:TM73, 2)
-when (45...46) # Tier 2 con un 30%
+when (43...45) # Tier 2 con un 30%
  itemReward(:TM93, 2)
-when (47...48) # Tier 2 con un 30%
+when (45...47) # Tier 2 con un 30%
   itemReward(:TM120, 2)
-when (49...50) # Tier 2 con un 30%
+when (47...49) # Tier 2 con un 30%
   itemReward(:TM121, 2)
-when (51...52) # Tier 2 con un 30%
+when (49...51) # Tier 2 con un 30%
   itemReward(:TM167, 2)
-when (53...54) # Tier 2 con un 30%
+when (51...53) # Tier 2 con un 30%
   itemReward(:TM168, 2)
-when (55...56) # Tier 2 con un 30%
+when (53...55) # Tier 2 con un 30%
   itemReward(:TM210, 2)
-when (57...58) # Tier 2 con un 30%
+when (55...57) # Tier 2 con un 30%
   itemReward(:TM223, 2)
-when (59...60) # Tier 2 con un 30%
+when (57...59) # Tier 2 con un 30%
   itemReward(:TM229, 2)
-when (61...62) # Tier 2 con un 30%
+when (59...61) # Tier 2 con un 30%
   itemReward(:TM249, 2)
-when (63...64) # Tier 2 con un 30%
+when (61...63) # Tier 2 con un 30%
   itemReward(:TM250, 2)
-  when (65...85) #Tier 3 con un 10%
-    pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
+  when (63...88) #Tier 3 con un 25%
+    pokes = [:MAGNEMITE,:PICHU,:VOLTORB,:ELEKID,:CHINCHOU,:MAREEP,:ELECTRIKE,:PLUSLE,:MINUM,:SHINX,:PACHIRISU,:ROTOM,:BLITZLE,:EMOLGA,:JOLTIK,:TYNAMO,:STUNFISK,:HELIOPTILE,:DEDENNE,:GRUBBIN,:TOGEDEMARU,:YAMPER,:TOXEL,:PINCURCHIN,:MORPEKO,:PAWMI,:TADBULB,:WATTREL,:VOLTORB,:ROOKIDEEB,:CHARGOO,:MANTYKEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (85...95) #Tier 4 con un 10%
-    pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
+  when (88...98) #Tier 4 con un 10%
+    pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (95...100) #Tier 5 con un 5%
+  when (98...100) #Tier 5 con un 2%
     result = rand(6)
     if (0..1).include?(result)
-      poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
-      poke.makeShiny
+      poke = PokeBattle_Pokemon.new(:RAIKOU,5,$Trainer)
       pokeReward(poke,5)
     elsif (2..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
-      poke.makeShiny
+      poke = PokeBattle_Pokemon.new(:ZAPDOS,5,$Trainer)
       pokeReward(poke,5)
     elsif (4..5).include?(result)
-      poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
-      poke.makeShiny
+      poke = PokeBattle_Pokemon.new(:ZERAORA,5,$Trainer)
+      pokeReward(poke,5)
+    elsif (6..7).include?(result)
+      poke = PokeBattle_Pokemon.new(:ZEKROM,5,$Trainer)
+      pokeReward(poke,5)
+    elsif (8..9).include?(result)
+      poke = PokeBattle_Pokemon.new(:THUNDURUS,5,$Trainer)
+      pokeReward(poke,5)    
+    elsif (10..11).include?(result)
+      poke = PokeBattle_Pokemon.new(:TAPUKOKO,5,$Trainer)
+      pokeReward(poke,5)
+    elsif (12..13).include?(result)
+      poke = PokeBattle_Pokemon.new(:REGIELEKI,5,$Trainer)
+      pokeReward(poke,5)
+    elsif (14..15).include?(result)
+      poke = PokeBattle_Pokemon.new(:MIRAIDON,5,$Trainer)
+      pokeReward(poke,5)
+    elsif (16..17).include?(result)
+      poke = PokeBattle_Pokemon.new(:ELECTROFURIA,5,$Trainer)
       pokeReward(poke,5)
     else
       itemReward(:RARECANDY,10)
