@@ -53,7 +53,7 @@ when (59...61) # Tier 2 con un 30%
 when (61...63) # Tier 2 con un 30%
   itemReward(:TM250, 2)
   when (63...76) #Tier 3 con un 25%
-    pokes = [:PICHU, :MAGNEMITE, :VOLTORB]
+    pokes = [:PICHU, :MAGNEMITE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
   when (76...88) #Tier 3 con un 25%
@@ -65,35 +65,7 @@ when (61...63) # Tier 2 con un 30%
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
   when (98...100) #Tier 5 con un 2%
-    result = rand(18)
-    if (0..1).include?(result)
-      poke = PokeBattle_Pokemon.new(:RAIKOU,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (2..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:ZAPDOS,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (4..5).include?(result)
-      poke = PokeBattle_Pokemon.new(:ZERAORA,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (6..7).include?(result)
-      poke = PokeBattle_Pokemon.new(:ZEKROM,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (8..9).include?(result)
-      poke = PokeBattle_Pokemon.new(:THUNDURUS,5,$Trainer)
-      pokeReward(poke,5)    
-    elsif (10..11).include?(result)
-      poke = PokeBattle_Pokemon.new(:TAPUKOKO,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (12..13).include?(result)
-      poke = PokeBattle_Pokemon.new(:REGIELEKI,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (14..15).include?(result)
-      poke = PokeBattle_Pokemon.new(:MIRAIDON,5,$Trainer)
-      pokeReward(poke,5)
-    elsif (16..17).include?(result)
-      poke = PokeBattle_Pokemon.new(:ELECTROFURIA,5,$Trainer)
-      pokeReward(poke,5)
-    else
-      itemReward(:RARECANDY,10)
-    end
+    pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
   end
