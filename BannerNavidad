@@ -26,7 +26,7 @@ prob = rand(100)
       poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
       poke.makeShiny
       pokeReward(poke,5)
-    elsif (4..5)
+    elsif (4..5).include?(result)
       poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
       poke.makeShiny
       pokeReward(poke,5)
