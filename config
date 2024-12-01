@@ -4,7 +4,7 @@ BANNERS  = {
               "bg" => "Graphics/Battlebacks/battlebgChampion",
               "rewards" => ["Graphics/Battlers/1047","Graphics/Battlers/1050","Graphics/Battlers/1053"],
               "stars" => [5, 4, 5],
-              "url" => "https://pastebin.com/raw/dk2itLbS",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/Banner1",
               "descr" =>  "Descripción"
               }
       }
