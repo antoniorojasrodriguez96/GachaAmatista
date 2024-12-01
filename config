@@ -11,7 +11,7 @@ BANNERS  = {
 
 if $game_variables[4977] >= 1
 BANNERS  += {
-      "banner_1" => {
+      "banner_romero" => {
               "name" => "Banner de Romero",
               "bg" => "Graphics/Pictures/menu/menubg7",
               "rewards" => ["Graphics/Icons/item292","Graphics/Battlers/183","Graphics/Battlers/210"],
