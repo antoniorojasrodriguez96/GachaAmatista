@@ -22,7 +22,7 @@ prob = rand(100)
     itemReward(:MAGNET,1)
     when 9
     itemReward(:CELLBATTERY,1)
-    10
+    when 10
     itemReward(:ZAPPLATE,1)
   end
   when (35...65) #Tier 2 con un 30%
