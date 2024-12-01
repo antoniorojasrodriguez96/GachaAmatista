@@ -1,7 +1,7 @@
 BANNERS  = {
       "banner_1" => {
               "name" => "Especial lanzamiento Regionales",
-              "bg" => "Graphics/Pictures/battlebgRosetta",
+              "bg" => "Graphics/Battlebacks/battlebgRosetta",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [2, 4, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
