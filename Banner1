@@ -1,90 +1,36 @@
 prob = rand(100)
   case prob
-  when (0...35) #Tier 1 con un 35%
-    pokes = [:ARCEUS, :GIRATINA, :PALKIA]
+  when (0...45) #Tier 1 con un 45%
+    pokes = [:BULIGORI, :MERLIKUM, :ROOKIDEEB, :POISOW, :MARACTUSB, :KANGA, :SEALURE, :HERABEE, :PINCHEE, :SKARMET, :CRYSTIZARD, :CRYOCROSS, :PATRATB, :SPINARAKB, :TERRADER, :MANTYKEB, :MYSPLUME, :YAMASKB, :LAVARUNT, :BAOBY, :MOZZQUITO, :SNOWYGAST, :KURSTRAW, :MEOWTHB, :CARBINKB, :POOCHYENAB]
     result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,20,$Trainer),1)
-  when (35...75) #Tier 2 con un 40%
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
+  when (45...75) #Tier 2 con un 30%
+    pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
+  when (75...87) #Tier 3 con un 12%
+    pokes = [:CHINCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGOB, :DODHOST, :VOLTANIX, :GIBLEB]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
+  when (87...99) #Tier 4 con un 12%
+    pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
+  when (99...100) #Tier 5 con un 1%
     result = rand(10)
-    if (5..7).include?(result)
-      poke = PokeBattle_Pokemon.new(:URSALUNA,20,$Trainer)
-      poke.ev[PBStats::SPATK]=236
-      poke.ev[PBStats::SPDEF]=76
-      poke.ev[PBStats::SPEED]=196
-      poke.pbLearnMove(:PSYCHIC)
-      poke.pbLearnMove(:DAZZLINGGLEAM)
-      poke.pbLearnMove(:PROTECT)
-      poke.pbLearnMove(:COUNTER)
-      poke.calcStats
-      pokeReward(poke,2)
-    else
-      pokes = [:RAYQUAZA, :GROUDON, :KYOGRE] 
-      result = pokes[rand(pokes.length)]
-      pokeReward(PokeBattle_Pokemon.new(result,20,$Trainer),2)
-    end
-  when (75...90) #Tier 3 con un 15%
-    result = rand(10)
-    if (0..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:EEVEE,20,$Trainer)
-      pokeReward(poke,3)
-    elsif (4..7).include?(result)
-      poke = PokeBattle_Pokemon.new(:SANDSHREW,20,$Trainer)
-      pokeReward(poke,3)
-    else
-      poke = PokeBattle_Pokemon.new(:DRATINI,20,$Trainer)
-      pokeReward(poke,3)
-    end
-  when (90...97) #Tier 4 con un 7%
-    result = rand(10)
-    if result > 7
-      poke = PokeBattle_Pokemon.new(:JOLTEON,20,$Trainer)
-      poke.iv[0]=31
-      poke.iv[1]=31
-      poke.iv[2]=31
-      poke.iv[3]=31
-      poke.iv[4]=31
-      poke.iv[5]=31
-      poke.pbLearnMove(:BITE)
-      poke.pbLearnMove(:HIDDENPOWER)
-      poke.pbLearnMove(:THUNDERSHOCK)
-      poke.calcStats
-      pokeReward(poke,4)
-    else
-      itemReward(:MAXETHER,4)
-    end
-  when (97...100) #Tier 5 con un 3%
-    result = rand(10)
-    if (0..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:KANGASKHAN,20,$Trainer)
-      poke.ev[PBStats::HP]=212
-      poke.ev[PBStats::ATTACK]=252
-      poke.ev[PBStats::SPEED]=44
-      poke.setItem(:LEFTOVERS)
-      poke.setNature(:ADAMANT)
-      poke.setAbility(0)
-      poke.calcStats
+    if (0..1).include?(result)
+      poke = PokeBattle_Pokemon.new(:CHINCHARB,5,$Trainer)
+      poke.makeShiny
       pokeReward(poke,5)
-    elsif (4..5).include?(result)
-      poke = PokeBattle_Pokemon.new(:GYARADOS,20,$Trainer)
-      poke.ev[PBStats::HP]=68
-      poke.ev[PBStats::ATTACK]=252
-      poke.ev[PBStats::SPEED]=188
-      poke.setItem(:LEFTOVERS)
-      poke.setNature(:INTIMIDATE)
-      poke.pbLearnMove(:DRAGONDANCE)
-      poke.calcStats
+    elsif (2..3).include?(result)
+      poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
+      poke.makeShiny
       pokeReward(poke,5)
-    elsif (6..7)
-      poke = PokeBattle_Pokemon.new(:VENUSAUR,20,$Trainer)
-      poke.ev[PBStats::HP]=252
-      poke.ev[PBStats::DEFENSE]=84
-      poke.ev[PBStats::SPDEF]=148
-      poke.ev[PBStats::SPEED]=24
-      poke.setNature(:CAREFUL)
-      poke.setAbility(0)
-      poke.calcStats
+    elsif (4..5)
+      poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
+      poke.makeShiny
       pokeReward(poke,5)
     else
-      itemReward(:MASTERBALL,5)
+      itemReward(:RARECANDY,10)
     end
   end
