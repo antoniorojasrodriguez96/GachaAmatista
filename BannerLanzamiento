@@ -8,15 +8,15 @@ prob = rand(100)
     pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),2)
-  when (75...85) #Tier 3 con un 10%
+  when (75...90) #Tier 3 con un 15%
     pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (85...95) #Tier 4 con un 10%
+  when (90...98) #Tier 4 con un 8%
     pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (95...100) #Tier 5 con un 5%
+  when (98...100) #Tier 5 con un 2%
     result = rand(6)
     if (0..1).include?(result)
       poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
