@@ -52,24 +52,12 @@ when (59...61) # Tier 2 con un 30%
   itemReward(:TM249, 2)
 when (61...63) # Tier 2 con un 30%
   itemReward(:TM250, 2)
-  when (63...68) #Tier 3 con un 25%
-    pokes = [:MAGNEMITE]
+  when (63...76) #Tier 3 con un 25%
+    pokes = [:PICHU, :MAGNEMITE, :VOLTORB, :CHINCHOU, :MAREEP, :ELEKID, :ELECTRIKE, :PLUSLE, :MINUN, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE, :EMOLGA, :JOLTIK, :TYNAMO, MANTYKEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (68...73) #Tier 3 con un 25%
-    pokes = [:PLUSLE]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (73...78) #Tier 3 con un 25%
-    pokes = [:JOLTIK]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (78...83) #Tier 3 con un 25%
-    pokes = [:YAMPER]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (83...88) #Tier 3 con un 25%
-    pokes = [:WATTREL]
+  when (76...88) #Tier 3 con un 25%
+    pokes = [:STUNFISK, :HELIOPTILE, :DEDENNE, :GRUBBIN, :TOGEDEMARU, :YAMPER, :TOXEL, :PINCURCHIN, :MORPEKO, :PAWMI, :TADBULB, :WATTREL, :VOLTORBB, :ROOKIDEEB, :CHARGOO]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
   when (88...98) #Tier 4 con un 10%
