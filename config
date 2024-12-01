@@ -24,7 +24,7 @@ BANNERS  = {
               "stars" => [1, 4, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
               "descr" =>  "Banner disponible esta semana. Obtén diversos objetos y Pokémon tipo Eléctrico. \nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
-              },
+              }
       }
 
 if $game_variables[4964] < 1
