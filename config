@@ -1,12 +1,12 @@
 BANNERS  = {
       "banner_1" => {
-              "name" => "Especial lanzamiento Regionales",
+              "name" => "Especial Demo 1",
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [2, 4, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
-              "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
-              }
+              "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              },
 
       "banner_2" => {
               "name" => "Navidad, dulce navidad",
@@ -15,7 +15,7 @@ BANNERS  = {
               "stars" => [1, 3, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
               "descr" =>  "¡Celebra la Navidad durante Diciembre y Enero con un Banner completamente escalofriante! \nPodrás recibir objetos y Pokémon de tipo Hielo, Agua, Cristal y Hada. \nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
-              }
+              },
 
       "banner_3" => {
               "name" => "Semana electrizante",
@@ -24,7 +24,7 @@ BANNERS  = {
               "stars" => [1, 4, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
               "descr" =>  "Banner disponible esta semana. Obtén diversos objetos y Pokémon tipo Eléctrico. \nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
-              }
+              },
       }
 
 if $game_variables[4964] < 1
