@@ -1,61 +1,61 @@
 prob = rand(100)
   case prob
   when (0...35) #Tier 1 con un 35%
-  result = rand(22)
-    if (0..1).include?(result)
+  case rand(11)
+    when 0
     itemReward(:BELUEBERRY,1)
-    elsif (2..3).include?(result)
+    when 1
     itemReward(:WACANBERRY,1)
-    elsif (4..5).include?(result)
+    when 2
     itemReward(:WEPEARBERRY,1)
-    elsif (6..7).include?(result)
+    when 3
     itemReward(:ELECTRICGEM,1)
-    elsif (8..9).include?(result)
+    when 4
     itemReward(:THUNDERSTONE,1)
-    elsif (10..11).include?(result)
+    when 5
     itemReward(:YELLOWNECTAR,1)
-    ELSif (12..13).include?(result)
+    when 6
     itemReward(:ELECTRICMEMORY,1)
-    elsif (14..15).include?(result)
+    when 7
     itemReward(:SHOCKDRIVE,1)
-    elsif (16..17).include?(result)
+    when 8
     itemReward(:MAGNET,1)
-    elsif (18..19).include?(result)
+    when 9
     itemReward(:CELLBATTERY,1)
-    elsif (20..21).include?(result)
+    10
     itemReward(:ZAPPLATE,1)
   end
   when (35...65) #Tier 2 con un 30%
-    result = rand(30)
-    if (0..1).include?(result)
+    case rand(15)
+    when 0
     itemReward(:TM24,2)
-    elsif (2..3).include?(result)
+    when 1
     itemReward(:TM25,2)
-    elsif (4..5).include?(result)
+    when 2
     itemReward(:TM57,2)
-    elsif (6..7).include?(result)
+    when 3
     itemReward(:TM72,2)
-    elsif (8..9).include?(result)
+    when 4
     itemReward(:TM73,2)
-    elsif (10..11).include?(result)
+    when 5
     itemReward(:TM93,2)
-    elsif (12..13).include?(result)
+    when 6
     itemReward(:TM120,2)
-    elsif (14..15).include?(result)
+    when 7
     itemReward(:TM121,2)
-    elsif (16..17).include?(result)
+    when 8
     itemReward(:TM167,2)
-    elsif (18..19).include?(result)
+    when 9
     itemReward(:TM168,2)
-    elsif (20..21).include?(result)
+    when 10
     itemReward(:TM210,2)
-    elsif (22..23).include?(result)
+    when 11
     itemReward(:TM223,2)
-    elsif (24..25).include?(result)
+    when 12
     itemReward(:TM229,2)
-    elsif (26..27).include?(result)
+    when 13
     itemReward(:TM249,2)
-    elsif (28..29).include?(result)
+    when 14
     itemReward(:TM250,2)
   end
   when (65...90) #Tier 3 con un 25%
