@@ -52,32 +52,29 @@ when (61...62) # Tier 2 con un 30%
   itemReward(:TM249, 2)
 when (63...64) # Tier 2 con un 30%
   itemReward(:TM250, 2)
-when (65...70) # Tier 3 con un 25%
-  pokes = [:JOLTIK, :TYNAMO, :STUNFISK, :HELIOPTILE, :DEDENNE, :MANTYKEB]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (70...75) # Tier 3 con un 25%
-  pokes = [:GRUBBIN, :TOGEDEMARU, :YAMPER, :TOXEL, :PINCURCHIN, :CHARGOO]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (75...80) # Tier 3 con un 25%
-  pokes = [:MORPEKO, :PAWMI, :TADBULB, :WATTREL, :VOLTORB, :ROOKIDEEB]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (80...85) # Tier 3 con un 25%
-  pokes = [:MAGNEMITE, :PICHU, :VOLTORB, :ELEKID, :CHINCHOU, :MAREEP, :EMOLGA]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (85...90) # Tier 3 con un 25%
-  pokes = [:ELECTRIKE, :PLUSLE, :MINUN, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (90...98) # Tier 4 con un 8%
-  pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-when (98...100) # Tier 5 con un 2%
-  pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON, :ELECTROFURIA]
-  result = pokes[rand(pokes.length)]
-  pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
-end
+  when (65...85) #Tier 3 con un 10%
+    pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
+  when (85...95) #Tier 4 con un 10%
+    pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
+  when (95...100) #Tier 5 con un 5%
+    result = rand(6)
+    if (0..1).include?(result)
+      poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
+      poke.makeShiny
+      pokeReward(poke,5)
+    elsif (2..3).include?(result)
+      poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
+      poke.makeShiny
+      pokeReward(poke,5)
+    elsif (4..5).include?(result)
+      poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
+      poke.makeShiny
+      pokeReward(poke,5)
+    else
+      itemReward(:RARECANDY,10)
+    end
+  end
