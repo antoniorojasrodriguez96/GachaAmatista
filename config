@@ -14,7 +14,7 @@ BANNERS  = {
               "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/225","Graphics/Battlers/788"],
               "stars" => [1, 3, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
-              "descr" =>  "3 estrellas: Delibird, Smoochum, Swinub, Snover, Vanillite, Eiscue, Snowygast, Cryocross, Staryub, Snom, Chingling, Swablu, Snorunt, Cleffa, Cottonee.\n4 estrellas: Glaceon, Amaura, Mrmime, Ironbundle, Piplupb, Wolfum, Pingupito, Togepi, Happiny, Piplup\n5 estrellas: Suicune, Glastrier, Regice\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
+              "descr" =>  "3*: Delibird, Smoochum, Swinub, Snover, Vanillite, Eiscue, Snowygast, Cryocross, Staryub, Snom, Chingling, Swablu, Snorunt, Cleffa, Cottonee.\n4*: Glaceon, Amaura, Mrmime, Ironbundle, Piplupb, Wolfum, Pingupito, Togepi, Happiny, Piplup\n5*: Suicune, Glastrier, Regice, Articuno\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
               },
 
       "banner_3" => {
