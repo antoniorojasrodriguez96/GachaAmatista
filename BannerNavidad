@@ -1,36 +1,35 @@
 prob = rand(100)
-  case prob
-  when (0...45) #Tier 1 con un 45%
-    pokes = [:BULIGORI, :MERLIKUM, :ROOKIDEEB, :POISOW, :MARACTUSB, :KANGA, :SEALURE, :HERABEE, :PINCHEE, :SKARMET, :CRYSTIZARD, :CRYOCROSS, :PATRATB, :SPINARAKB, :TERRADER, :MANTYKEB, :MYSPLUME, :YAMASKB, :LAVARUNT, :BAOBY, :MOZZQUITO, :SNOWYGAST, :KURSTRAW, :MEOWTHB, :CARBINKB, :POOCHYENAB]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
-  when (45...75) #Tier 2 con un 30%
-    pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),2)
-  when (75...85) #Tier 3 con un 10%
-    pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
+case prob
+when (0...5) # Tier 1 con un 50%
+  itemReward(:ICESTONE, 1)
+when (5...10) # Tier 1 con un 50%
+  itemReward(:MOOMOOMILK, 1)
+when (10...15) # Tier 1 con un 50%
+  itemReward(:CASTELIACONE, 1)
+when (15...20) # Tier 1 con un 50%
+ itemReward(:RARECANDY, 2)
+when (20...25) # Tier 2 con un 50%
+ itemReward(:LUCKYEGG, 2)
+when (25...30) # Tier 2 con un 50%
+ itemReward(:TM07, 2)
+when (30...35) # Tier 2 con un 50%
+ itemReward(:TM14, 2)
+when (35...40) # Tier 2 con un 50%
+  itemReward(:TM119, 2)
+when (40...45) # Tier 2 con un 50%
+  itemReward(:TM195, 2)
+when (45...50) # Tier 2 con un 50%
+  itemReward(:TM79, 2)
+when (50...90) #Tier 3 con un 40%
+    pokes = [:DELIBIRD, :SMOOCHUM, :SWINUB, :SNOVER, :VANILLITE, :EISCUE, :SNOWYGAST, :CRYOCROSS, :STARYUB, :SNOM, :CHINGLING, :SWABLU, :SNORUNT, :CLEFFA, :COTTONEE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (85...95) #Tier 4 con un 10%
-    pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
+when (90...98) #Tier 4 con un 8%
+    pokes = [:GLACEON, :AMAURA, :MRRIME, :IRONBUNDLE, :PIPLUPB, :WOLFUM, :PINGUPITO, :TOGEPI, :HAPPINY, :PIPLUP]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (95...100) #Tier 5 con un 5%
-    result = rand(6)
-    if (0..1).include?(result)
-      poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
-    elsif (2..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
-    elsif (4..5).include?(result)
-      poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
-    else
-      itemReward(:RARECANDY,10)
-    end
-  end
+when (98...100) #Tier 5 con un 2%
+    pokes = [:SUICUNE, :GLASTRIER, :REGICE]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
+end
