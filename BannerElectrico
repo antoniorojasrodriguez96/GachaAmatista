@@ -1,51 +1,51 @@
-  prob = rand(100)
-  case prob
-  when (0...35) # Tier 1 con un 35%
-    case rand(11)
-      when 0 then itemReward(:BELUEBERRY, 1)
-      when 1 then itemReward(:WACANBERRY, 1)
-      when 2 then itemReward(:WEPEARBERRY, 1)
-      when 3 then itemReward(:ELECTRICGEM, 1)
-      when 4 then itemReward(:THUNDERSTONE, 1)
-      when 5 then itemReward(:YELLOWNECTAR, 1)
-      when 6 then itemReward(:ELECTRICMEMORY, 1)
-      when 7 then itemReward(:SHOCKDRIVE, 1)
-      when 8 then itemReward(:MAGNET, 1)
-      when 9 then itemReward(:CELLBATTERY, 1)
-      when 10 then itemReward(:ZAPPLATE, 1)
-    end
-  when (35...65) # Tier 2 con un 30%
-    case rand(15)
-      when 0 then itemReward(:TM24, 2)
-      when 1 then itemReward(:TM25, 2)
-      when 2 then itemReward(:TM57, 2)
-      when 3 then itemReward(:TM72, 2)
-      when 4 then itemReward(:TM73, 2)
-      when 5 then itemReward(:TM93, 2)
-      when 6 then itemReward(:TM120, 2)
-      when 7 then itemReward(:TM121, 2)
-      when 8 then itemReward(:TM167, 2)
-      when 9 then itemReward(:TM168, 2)
-      when 10 then itemReward(:TM210, 2)
-      when 11 then itemReward(:TM223, 2)
-      when 12 then itemReward(:TM229, 2)
-      when 13 then itemReward(:TM249, 2)
-      when 14 then itemReward(:TM250, 2)
-    end
-  when (65...77) # Tier 3 con un 25%
-    pokes = [:JOLTIK,:TYNAMO,:STUNFISK,:HELIOPTILE,:DEDENNE,:GRUBBIN,:TOGEDEMARU,:YAMPER,:TOXEL,:PINCURCHIN,:MORPEKO,:PAWMI,:TADBULB,:WATTREL,:VOLTORB,:ROOKIDEEB,:CHARGOO,:MANTYKEB]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
-  when (77...90) # Tier 3 con un 25%
-    pokes = [:MAGNEMITE,:PICHU,:VOLTORB,:ELEKID,:CHINCHOU,:MAREEP,:ELECTRIKE,:PLUSLE,:MINUM,:SHINX,:PACHIRISU,:ROTOM,:BLITZLE,:EMOLGA]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
-  when (90...98) # Tier 4 con un 8%
-    pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 4)
-  when (98...100) # Tier 5 con un 2%
-    pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON, :ELECTROFURIA]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 5)
+prob = rand(100)
+case prob
+when (0...35) # Tier 1 con un 35%
+  case rand(11)
+  when 0 then itemReward(:BELUEBERRY, 1)
+  when 1 then itemReward(:WACANBERRY, 1)
+  when 2 then itemReward(:WEPEARBERRY, 1)
+  when 3 then itemReward(:ELECTRICGEM, 1)
+  when 4 then itemReward(:THUNDERSTONE, 1)
+  when 5 then itemReward(:YELLOWNECTAR, 1)
+  when 6 then itemReward(:ELECTRICMEMORY, 1)
+  when 7 then itemReward(:SHOCKDRIVE, 1)
+  when 8 then itemReward(:MAGNET, 1)
+  when 9 then itemReward(:CELLBATTERY, 1)
+  when 10 then itemReward(:ZAPPLATE, 1)
   end
+when (35...65) # Tier 2 con un 30%
+  case rand(15)
+  when 0 then itemReward(:TM24, 2)
+  when 1 then itemReward(:TM25, 2)
+  when 2 then itemReward(:TM57, 2)
+  when 3 then itemReward(:TM72, 2)
+  when 4 then itemReward(:TM73, 2)
+  when 5 then itemReward(:TM93, 2)
+  when 6 then itemReward(:TM120, 2)
+  when 7 then itemReward(:TM121, 2)
+  when 8 then itemReward(:TM167, 2)
+  when 9 then itemReward(:TM168, 2)
+  when 10 then itemReward(:TM210, 2)
+  when 11 then itemReward(:TM223, 2)
+  when 12 then itemReward(:TM229, 2)
+  when 13 then itemReward(:TM249, 2)
+  when 14 then itemReward(:TM250, 2)
+  end
+when (65...77) # Tier 3 con un 25%
+  pokes = [:JOLTIK, :TYNAMO, :STUNFISK, :HELIOPTILE, :DEDENNE, :GRUBBIN, :TOGEDEMARU, :YAMPER, :TOXEL, :PINCURCHIN, :MORPEKO, :PAWMI, :TADBULB, :WATTREL, :VOLTORB, :ROOKIDEEB, :CHARGOO, :MANTYKEB]
+  result = pokes[rand(pokes.length)]
+  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
+when (77...90) # Tier 3 con un 25%
+  pokes = [:MAGNEMITE, :PICHU, :VOLTORB, :ELEKID, :CHINCHOU, :MAREEP, :ELECTRIKE, :PLUSLE, :MINUM, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE, :EMOLGA]
+  result = pokes[rand(pokes.length)]
+  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 3)
+when (90...98) # Tier 4 con un 8%
+  pokes = [:SANDYSHOCKS, :DRACOZOLT, :ARCTOZOLT, :IRONHANDS, :IRONTHORNS, :MAGNEMITEB, :VOLTANIX, :XURKITREE]
+  result = pokes[rand(pokes.length)]
+  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 4)
+when (98...100) # Tier 5 con un 2%
+  pokes = [:RAIKOU, :ZAPDOS, :ZERAORA, :ZEKROM, :THUNDURUS, :TAPUKOKO, :REGIELEKI, :MIRAIDON, :ELECTROFURIA]
+  result = pokes[rand(pokes.length)]
+  pokeReward(PokeBattle_Pokemon.new(result, 5, $Trainer), 5)
+end
