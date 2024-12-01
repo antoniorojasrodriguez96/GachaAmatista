@@ -1,35 +1,75 @@
 prob = rand(100)
   case prob
-  when (0...45) #Tier 1 con un 45%
-    pokes = [:BULIGORI, :MERLIKUM, :ROOKIDEEB, :POISOW, :MARACTUSB, :KANGA, :SEALURE, :HERABEE, :PINCHEE, :SKARMET, :CRYSTIZARD, :CRYOCROSS, :PATRATB, :SPINARAKB, :TERRADER, :MANTYKEB, :MYSPLUME, :YAMASKB, :LAVARUNT, :BAOBY, :MOZZQUITO, :SNOWYGAST, :KURSTRAW, :MEOWTHB, :CARBINKB, :POOCHYENAB]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
-  when (45...75) #Tier 2 con un 30%
-    pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
-    result = pokes[rand(pokes.length)]
-    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),2)
-  when (75...85) #Tier 3 con un 10%
-    pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
+  when (0...35) #Tier 1 con un 35%
+  result = rand(22)
+    if (0..1).include?(result)
+    itemReward(:BELUEBERRY,1)
+    elsif (2..3).include?(result)
+    itemReward(:WACANBERRY,1)
+    elsif (4..5).include?(result)
+    itemReward(:WEPEARBERRY,1)
+    elsif (6..7).include?(result)
+    itemReward(:ELECTRICGEM,1)
+    elsif (8..9).include?(result)
+    itemReward(:THUNDERSTONE,1)
+    elsif (10..11).include?(result)
+    itemReward(:YELLOWNECTAR,1)
+    ELSif (12..13).include?(result)
+    itemReward(:ELECTRICMEMORY,1)
+    elsif (14..15).include?(result)
+    itemReward(:SHOCKDRIVE,1)
+    elsif (16..17).include?(result)
+    itemReward(:MAGNET,1)
+    elsif (18..19).include?(result)
+    itemReward(:CELLBATTERY,1)
+    elsif (20..21).include?(result)
+    itemReward(:ZAPPLATE,1)
+  end
+  when (35...65) #Tier 2 con un 30%
+    result = rand(30)
+    if (0..1).include?(result)
+    itemReward(:TM24,2)
+    elsif (2..3).include?(result)
+    itemReward(:TM25,2)
+    elsif (4..5).include?(result)
+    itemReward(:TM57,2)
+    elsif (6..7).include?(result)
+    itemReward(:TM72,2)
+    elsif (8..9).include?(result)
+    itemReward(:TM73,2)
+    elsif (10..11).include?(result)
+    itemReward(:TM93,2)
+    elsif (12..13).include?(result)
+    itemReward(:TM120,2)
+    elsif (14..15).include?(result)
+    itemReward(:TM121,2)
+    elsif (16..17).include?(result)
+    itemReward(:TM167,2)
+    elsif (18..19).include?(result)
+    itemReward(:TM168,2)
+    elsif (20..21).include?(result)
+    itemReward(:TM210,2)
+    elsif (22..23).include?(result)
+    itemReward(:TM223,2)
+    elsif (24..25).include?(result)
+    itemReward(:TM229,2)
+    elsif (26..27).include?(result)
+    itemReward(:TM249,2)
+    elsif (28..29).include?(result)
+    itemReward(:TM250,2)
+  end
+  when (65...90) #Tier 3 con un 25%
+    pokes = [:MAGNEMITE,:PICHU,:VOLTORB,:ELEKID,:CHINCHOU,:MAREEP,:ELECTRIKE,:PLUSLE,:MINUM,:SHINX,:PACHIRISU,:ROTOM,:BLITZLE,:EMOLGA,:JOLTIK,:TYNAMO,:STUNFISK,:HELIOPTILE,:DEDENNE,:GRUBBIN,:TOGEDEMARU,:YAMPER,:TOXEL,:PINCURCHIN,:MORPEKO,:PAWMI,:TADBULB,:WATTREL,:VOLTORB,:ROOKIDEEB,:CHARGOO,:MANTYKEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (85...95) #Tier 4 con un 10%
-    pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
+  when (90...98) #Tier 4 con un 8%
+    pokes = [:SANDYSHOCKS,:DRACOZOLT,:ARCTOZOLT,:IRONHANDS,:IRONTHORNS,:MAGNEMITEB,:VOLTANIX,:XURKITREE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (95...100) #Tier 5 con un 5%
-    result = rand(6)
-    if (0..1).include?(result)
-      poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
-    elsif (2..3).include?(result)
-      poke = PokeBattle_Pokemon.new(:PIPLUPB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
-    elsif (4..5)
-      poke = PokeBattle_Pokemon.new(:TURTWIGB,5,$Trainer)
-      poke.makeShiny
-      pokeReward(poke,5)
+  when (98...100) #Tier 5 con un 2%
+    pokes = [:RAIKOU,:ZAPDOS,:ZERAORA,:ZEKROM,:THUNDURUS,:TAPUKOKO,:REGIELEKI,:MIRAIDON,:ELECTROFURIA]
+    result = pokes[rand(pokes.length)]
+    pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
     else
       itemReward(:RARECANDY,10)
     end
