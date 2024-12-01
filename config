@@ -1,34 +1,50 @@
 BANNERS  = {
       "banner_1" => {
               "name" => "Especial lanzamiento Regionales",
-              "bg" => "Graphics/Battlebacks/battlebgRosetta",
+              "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [2, 4, 5],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerEspecial",
               "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               }
 
       "banner_2" => {
-              "name" => "Especial lanzamiento Regionales",
-              "bg" => "Graphics/Battlebacks/battlebgRosetta",
-              "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
-              "stars" => [2, 4, 5],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
-              "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              "name" => "Navidad, dulce navidad",
+              "bg" => "Graphics/Pictures/Banners/navidad",
+              "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/225","Graphics/Battlers/788"],
+              "stars" => [1, 3, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
+              "descr" =>  "¡Celebra la Navidad durante Diciembre y Enero con un Banner completamente escalofriante! \nPodrás recibir objetos y Pokémon de tipo Hielo, Agua, Cristal y Hada. \nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
+              }
+
+      "banner_3" => {
+              "name" => "Semana electrizante",
+              "bg" => "Graphics/Pictures/Banners/electrico",
+              "rewards" => ["Graphics/Icons/item013","Graphics/Battlers/796","Graphics/Battlers/145"],
+              "stars" => [1, 4, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
+              "descr" =>  "Banner disponible esta semana. Obtén diversos objetos y Pokémon tipo Eléctrico. \nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
               }
       }
 
 if $game_variables[4964] < 1
       Kernel.pbMessage("¡Hay nuevo un Banner Especial!")
-      Kernel.pbMessage("Has recibido 3 tiradas para celebrarlo.")
-      $PokemonGlobal.gachaCoins += 3
+      Kernel.pbMessage("Has recibido 10 tiradas para celebrarlo.")
+      $PokemonGlobal.gachaCoins += 10
       $game_variables[4964] = 1
 end
 
 if $game_variables[4964] < 2
-      Kernel.pbMessage("¡Hay nuevo un Banner Mensual!")
-      Kernel.pbMessage("Has recibido 2 tiradas para celebrarlo.")
-      $PokemonGlobal.gachaCoins += 2
+      Kernel.pbMessage("¡Hay nuevo un Banner de Temporada!")
+      Kernel.pbMessage("Has recibido 5 tiradas para celebrarlo.")
+      $PokemonGlobal.gachaCoins += 5
       $game_variables[4964] = 2
+end
+
+if $game_variables[4964] < 3
+      Kernel.pbMessage("¡Hay un nuevo Banner semanal!")
+      Kernel.pbMessage("Has recibido 1 tirada para celebrarlo.")
+      $PokemonGlobal.gachaCoins += 1
+      $game_variables[4964] = 3
 end
 
