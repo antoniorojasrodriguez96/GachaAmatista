@@ -30,21 +30,21 @@ BANNERS  = {
 if $game_variables[4964] < 1
       Kernel.pbMessage("¡Hay nuevo un Banner Especial!")
       Kernel.pbMessage("Has recibido 10 tiradas para celebrarlo.")
-      $PokemonGlobal.gachaCoins += 10
+      $PokemonGlobal.gachaCoins += 100
       $game_variables[4964] = 1
 end
 
 if $game_variables[4964] < 2
       Kernel.pbMessage("¡Hay nuevo un Banner de Temporada!")
       Kernel.pbMessage("Has recibido 5 tiradas para celebrarlo.")
-      $PokemonGlobal.gachaCoins += 5
+      $PokemonGlobal.gachaCoins += 50
       $game_variables[4964] = 2
 end
 
 if $game_variables[4964] < 3
       Kernel.pbMessage("¡Hay un nuevo Banner semanal!")
       Kernel.pbMessage("Has recibido 1 tirada para celebrarlo.")
-      $PokemonGlobal.gachaCoins += 1
+      $PokemonGlobal.gachaCoins += 10
       $game_variables[4964] = 3
 end
 
