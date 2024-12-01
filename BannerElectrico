@@ -39,7 +39,7 @@ when (65...77) # Tier 3 con un 25%
   result = pokes[rand(pokes.length)]
   pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
 when (77...90) # Tier 3 con un 25%
-  pokes = [:MAGNEMITE, :PICHU, :VOLTORB, :ELEKID, :CHINCHOU, :MAREEP, :ELECTRIKE, :PLUSLE, :MINUM, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE, :EMOLGA]
+  pokes = [:MAGNEMITE, :PICHU, :VOLTORB, :ELEKID, :CHINCHOU, :MAREEP, :ELECTRIKE, :PLUSLE, :MINUN, :SHINX, :PACHIRISU, :ROTOM, :BLITZLE, :EMOLGA]
   result = pokes[rand(pokes.length)]
   pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
 when (90...98) # Tier 4 con un 8%
