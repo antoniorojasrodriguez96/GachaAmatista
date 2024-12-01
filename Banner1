@@ -1,6 +1,6 @@
-if game_switches[3666] == false
+if $game_switches[3666] == false
       $PokemonGlobal.gachaCoins += 10
-      game_switches[3666] = true
+      $game_switches[3666] = true
 end
 prob = rand(100)
   case prob
