@@ -4,7 +4,7 @@ BANNERS  = {
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [2, 4, 5],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerEspecial",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
               "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               }
 
