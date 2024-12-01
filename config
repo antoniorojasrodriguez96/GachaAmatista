@@ -1,16 +1,31 @@
 BANNERS  = {
       "banner_1" => {
               "name" => "Especial lanzamiento Regionales",
-              "bg" => "Graphics/Battlebacks/battlebgRosetta",
+              "bg" => "Graphics/Pictures/battlebgRosetta",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [2, 4, 5],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/Banner1",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
               "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               }
       }
+
+if $game_variables[4977] >= 1
+BANNERS  += {
+      "banner_1" => {
+              "name" => "Banner de Romero",
+              "bg" => "Graphics/Pictures/menu/menubg7",
+              "rewards" => ["Graphics/Icons/item292","Graphics/Battlers/183","Graphics/Battlers/210"],
+              "stars" => [1, 3, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerRomero",
+              "descr" =>  "En este banner podrás conseguir MTs y objetos de tipo Hada, Pokémon temáticos del personaje y líder de gimnasio Romero con moveset y estadísticas competitivas, y otros Pokémon tipo Hada. Este banner es permanente."
+              }
+      }
+end
+
 if $game_variables[4964] < 1
       Kernel.pbMessage("¡Hay nuevo un Banner Especial!")
       Kernel.pbMessage("Has recibido 3 tiradas para celebrarlo.")
       $PokemonGlobal.gachaCoins += 3
       $game_variables[4964] = 1
 end
+
