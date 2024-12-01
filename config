@@ -8,3 +8,4 @@ BANNERS  = {
               "descr" =>  "Los 1 y 2 estrellas son Pokémon básicos. \nLos 3 y 4 estrellas son Pokémon starters, pseudolegendarios y evoluciones.  \nLos 5 estrellas son los starters Variocolor. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               }
       }
+$PokemonGlobal.gachaCoins += 10
