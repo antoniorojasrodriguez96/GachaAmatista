@@ -61,7 +61,7 @@ when (61...63) # Tier 2 con un 30%
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
   when (98...100) #Tier 5 con un 2%
-    result = rand(6)
+    result = rand(18)
     if (0..1).include?(result)
       poke = PokeBattle_Pokemon.new(:RAIKOU,5,$Trainer)
       pokeReward(poke,5)
