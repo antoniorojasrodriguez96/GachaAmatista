@@ -13,7 +13,7 @@ BANNERS  = {
               "bg" => "Graphics/Pictures/Banners/navidad",
               "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/986","Graphics/Battlers/144"],
               "stars" => [1, 3, 2],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/config",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/configTransicion",
               "descr" =>  "¿Te ves con suerte y te gusta dejarte el dinero en recompensas casi inalcanzables?.\n\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
               },
 
