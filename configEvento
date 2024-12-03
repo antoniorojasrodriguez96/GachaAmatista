@@ -1,0 +1,28 @@
+BANNERS  = {
+      "banner_1" => {
+              "name" => "Evento 1",
+              "bg" => "Graphics/Pictures/Banners/especial",
+              "rewards" => ["Graphics/Pictures/vacio","Graphics/Battlers/trainer491","Graphics/Pictures/vacio"],
+              "stars" => [6, 6, 6],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/DesafioRomero",
+              "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              },
+
+      "banner_2" => {
+              "name" => "Evento 1",
+              "bg" => "Graphics/Pictures/Banners/especial",
+              "rewards" => ["Graphics/Pictures/vacio","Graphics/Battlers/trainer491","Graphics/Pictures/vacio"],
+              "stars" => [6, 6, 6],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/DesafioRomero",
+              "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              },
+
+      "banner_3" => {
+              "name" => "Evento 1",
+              "bg" => "Graphics/Pictures/Banners/especial",
+              "rewards" => ["Graphics/Pictures/vacio","Graphics/Battlers/trainer491","Graphics/Pictures/vacio"],
+              "stars" => [6, 6, 6],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/DesafioRomero",
+              "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              },
+      }
