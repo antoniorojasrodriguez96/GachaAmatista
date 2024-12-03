@@ -1,22 +1,22 @@
 prob = rand(100)
   case prob
-  when (0...45) #Tier 1 con un 45%
+  when (0...35) #Tier 1 con un 35%
     pokes = [:BULIGORI, :MERLIKUM, :ROOKIDEEB, :POISOW, :MARACTUSB, :KANGA, :SEALURE, :HERABEE, :PINCHEE, :SKARMET, :CRYSTIZARD, :CRYOCROSS, :PATRATB, :SPINARAKB, :TERRADER, :MANTYKEB, :MYSPLUME, :YAMASKB, :LAVARUNT, :BAOBY, :MOZZQUITO, :SNOWYGAST, :KURSTRAW, :MEOWTHB, :CARBINKB, :POOCHYENAB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),1)
-  when (45...75) #Tier 2 con un 30%
+  when (35...60) #Tier 2 con un 25%
     pokes = [:FLOATUG, :ANGSTLY, :MINAMAI, :RHYSPROUT, :POLYGON, :CHINGMEOW, :STARYUB, :PINGUPITO, :CHARGOO, :HOOTHOOTB, :REMORGUN, :GHOSDRON, :MUNNAB, :TANGELAB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),2)
-  when (75...90) #Tier 3 con un 15%
+  when (60...80) #Tier 3 con un 20%
     pokes = [:CHIMCHARB, :PIPLUPB, :TURTWIGB, :MAGNEMITEB, :CISTEGO, :DODHOST, :VOLTANIX, :GIBLEB]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-  when (90...98) #Tier 4 con un 8%
+  when (80...95) #Tier 4 con un 15%
     pokes = [:GALVANEON, :BREEZEON, :BUZZEON, :GDAYEON, :STRUGGEON, :DRAKEON, :FRACTALEON, :WITCHEON, :BRUSHEON, :OBSIDEON, :GIRAGHOSRIG, :GIRAFRAGIR, :KILNKOAL, :WORKABEE, :ECHOBELLE]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-  when (98...100) #Tier 5 con un 2%
+  when (95...100) #Tier 5 con un 5%
     result = rand(6)
     if (0..1).include?(result)
       poke = PokeBattle_Pokemon.new(:CHIMCHARB,5,$Trainer)
