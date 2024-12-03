@@ -14,7 +14,7 @@ BANNERS  = {
               "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/986","Graphics/Battlers/144"],
               "stars" => [1, 4, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
-              "descr" =>  "4*: Glaceon, Amaura, Mrmime, Ferrosaco, Wolfum, Pingupito, Togepi, Happiny, Piplup\n\n5*: Suicune, Glastrier, Regice, Articuno\n\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
+              "descr" =>  "4*: Glaceon, Amaura, Mrmime, Ferrosaco, Wolfum, Pingupito, Togepi, Happiny, Piplup\n\n5*: Suicune, Glastrier, Regice, Articuno\n\nDisponible hasta el <c2=043c3aff>14-1-2025</c2>."
               },
 
       "banner_3" => {
