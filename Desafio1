@@ -35,4 +35,4 @@ def CombateEvento
     pbMessage("La batalla fue interrumpida.")
   end
 end
-CombateEvento
+CombateEvento()
