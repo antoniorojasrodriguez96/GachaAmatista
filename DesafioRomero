@@ -1,1 +1,34 @@
-pbCommonEvent(99)
+trainer_type = :LASS                # Tipo de entrenador
+  trainer_name = "Sophie"             # Nombre del entrenador
+  trainer_id = 2                      # ID del entrenador
+  trainer_items = [:POTION, :ETHER]   # Objetos del entrenador
+
+  # Configuración del equipo del entrenador
+  pokemon_party = [
+    [:CHARMANDER, 8],                 # Especie y nivel
+    [:PIDGEY, 6]
+  ]
+
+  # Crear el entrenador
+  trainer = NPCTrainer.new(trainer_name, trainer_type)
+  trainer.id = trainer_id
+  trainer.items = trainer_items
+
+  # Añadir Pokémon al equipo
+  pokemon_party.each do |data|
+    species, level = data
+    pokemon = Pokemon.new(species, level)
+    trainer.party.push(pokemon)
+  end
+
+  # Forzar la batalla
+  result = pbTrainerBattle(trainer)
+
+  # Manejar el resultado de la batalla
+  if result == 1
+    pbMessage("Ganaste la batalla.")
+  elsif result == 2
+    pbMessage("Perdiste la batalla.")
+  else
+    pbMessage("La batalla fue interrumpida.")
+  end
