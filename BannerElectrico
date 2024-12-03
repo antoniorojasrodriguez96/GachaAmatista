@@ -1,34 +1,34 @@
 prob = rand(100)
 case prob
-when (0...5) # Tier 1 con un 35%
+when (0...10) # Tier 1 con un 35%
   itemReward(:BELUEBERRY, 1)
-when (5...10) # Tier 1 con un 35%
+when (10...20) # Tier 1 con un 35%
   itemReward(:THUNDERSTONE, 1)
-when (10...15) # Tier 1 con un 35%
+when (20...30) # Tier 1 con un 35%
   itemReward(:ELECTRICMEMORY, 1)
-when (15...20) # Tier 1 con un 35%
+when (30...40) # Tier 1 con un 35%
  itemReward(:MAGNET, 1)
-when (20...25) # Tier 2 con un 35%
+when (40...45) # Tier 2 con un 4%
  itemReward(:TM24, 2)
-when (25...27) # Tier 2 con un 35%
+when (50...55) # Tier 2 con un 4%
  itemReward(:TM72, 2)
-when (27...29) # Tier 2 con un 35%
+when (55...60) # Tier 2 con un 4%
  itemReward(:TM93, 2)
-when (29...31) # Tier 2 con un 35%
+when (60...65) # Tier 2 con un 4%
   itemReward(:TM121, 2)
-when (31...33) # Tier 2 con un 35%
+when (65...70) # Tier 2 con un 4%
   itemReward(:TM167, 2)
-when (33...35) # Tier 2 con un 35%
+when (70...75) # Tier 2 con un 4%
   itemReward(:TM250, 2)
-when (35...65) #Tier 3 con un 30%
+when (75...95) #Tier 3 con un 20%
     pokes = [:MAGNEMITE, :VOLTORB, :PICHU, :ELECTRIKE, :EMOLGA]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),3)
-when (65...90) #Tier 4 con un 25%
+when (95...99) #Tier 4 con un 4%
     pokes = [:SANDYSHOCKS, :DRACOZOLT, :IRONHANDS]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),4)
-when (90...100) #Tier 5 con un 10%
+when (99...100) #Tier 5 con un 1%
     pokes = [:RAIKOU, :ZAPDOS]
     result = pokes[rand(pokes.length)]
     pokeReward(PokeBattle_Pokemon.new(result,5,$Trainer),5)
