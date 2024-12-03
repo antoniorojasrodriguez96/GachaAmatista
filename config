@@ -35,7 +35,7 @@ if $game_variables[4964] < 1
 end
 
 if $game_variables[4964] < 2
-      Kernel.pbMessage("¡Hay nuevo un Banner de Temporada!")
+      Kernel.pbMessage("¡Hay nuevo un Banner mensual!")
       Kernel.pbMessage("Has recibido 10 tiradas para celebrarlo.")
       $PokemonGlobal.gachaCoins += 10
       $game_variables[4964] = 2
