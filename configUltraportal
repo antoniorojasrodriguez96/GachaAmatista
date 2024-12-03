@@ -19,7 +19,7 @@ BANNERS  = {
 
       "banner_3" => {
               "name" => "\nEventos especiales",
-              "bg" => "Graphics/Pictures/Battlebacks/battlebgEliteC",
+              "bg" => "Graphics/Battlebacks/battlebgEliteC",
               "rewards" => ["Graphics/Pictures/vacio","Graphics/Battlers/491","Graphics/Pictures/vacio"],
               "stars" => [5, 3, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
