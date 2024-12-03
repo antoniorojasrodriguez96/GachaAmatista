@@ -4,7 +4,7 @@ BANNERS  = {
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [1, 3, 2],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/configTransicionCombate",
               "descr" =>  "¡Combate en desafiantes combates! ¿Serás capaz de superarlos para recibir increíbles recompensas?\n\nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               },
 
