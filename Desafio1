@@ -1,4 +1,3 @@
-def CombateEvento
 # Configuración del entrenador
   trainer_type = :IDER1               # Tipo de entrenador
   trainer_name = "Romero"             # Nombre del entrenador
@@ -34,5 +33,3 @@ def CombateEvento
   else
     pbMessage("La batalla fue interrumpida.")
   end
-end
-CombateEvento()
