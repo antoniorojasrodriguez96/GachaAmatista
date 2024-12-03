@@ -1,7 +1,7 @@
 BANNERS  = {
       "banner_1" => {
               "name" => "\nDesafios",
-              "bg" => "Graphics/Battlebacks/battlebgChampion",
+              "bg" => "Graphics/Battlebacks/battlebgGimnasio",
               "rewards" => ["Graphics/Characters/trainer133","Graphics/Characters/trainer142","Graphics/Characters/trainer091"],
               "stars" => [1, 3, 2],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/configTransicionCombate",
@@ -19,9 +19,9 @@ BANNERS  = {
 
       "banner_3" => {
               "name" => "\nEventos especiales",
-              "bg" => "Graphics/Pictures/Banners/electrico",
-              "rewards" => ["Graphics/Icons/item013","Graphics/Battlers/796","Graphics/Battlers/145"],
-              "stars" => [1, 3, 2],
+              "bg" => "Graphics/Pictures/Battlebacks/battlebgEliteC",
+              "rewards" => ["Graphics/Pictures/vacio","Graphics/Battlers/491","Graphics/Pictures/vacio"],
+              "stars" => [5, 5, 5],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
               "descr" =>  "¡Regalos, misiones ocultas, y mucho más, te esperan!.\n\nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
               }
