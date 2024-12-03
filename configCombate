@@ -1,0 +1,28 @@
+BANNERS  = {
+      "banner_1" => {
+              "name" => "Especial Demo 1",
+              "bg" => "Graphics/Pictures/Banners/especial",
+              "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
+              "stars" => [2, 4, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
+              "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
+              },
+
+      "banner_2" => {
+              "name" => "Navidad, dulce navidad",
+              "bg" => "Graphics/Pictures/Banners/navidad",
+              "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/986","Graphics/Battlers/144"],
+              "stars" => [1, 4, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
+              "descr" =>  "4*: Glaceon, Amaura, Mrmime, Ferrosaco, Wolfum, Pingupito, Togepi, Happiny, Piplup\n\n5*: Suicune, Glastrier, Regice, Articuno\n\nDisponible hasta el <c2=043c3aff>14-1-2025</c2>."
+              },
+
+      "banner_3" => {
+              "name" => "Semana electrizante",
+              "bg" => "Graphics/Pictures/Banners/electrico",
+              "rewards" => ["Graphics/Icons/item013","Graphics/Battlers/796","Graphics/Battlers/145"],
+              "stars" => [1, 4, 5],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
+              "descr" =>  "Banner disponible esta semana. Obtén diversos objetos y Pokémon tipo Eléctrico que cambian cada vez que se anuncia este Banner.\n\nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
+              }
+      }
