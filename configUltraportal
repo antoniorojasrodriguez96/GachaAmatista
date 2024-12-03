@@ -1,6 +1,6 @@
 BANNERS  = {
       "banner_1" => {
-              "name" => "Desafios\n",
+              "name" => "\nDesafios",
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
               "stars" => [1, 3, 2],
@@ -9,16 +9,16 @@ BANNERS  = {
               },
 
       "banner_2" => {
-              "name" => "Gachapon",
-              "bg" => "Graphics/Pictures/Banners/navidad",
-              "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/986","Graphics/Battlers/144"],
+              "name" => "\nGachapon",
+              "bg" => "Graphics/Battlebacks/battlebgRosetta",
+              "rewards" => ["Graphics/Battlers/145","Graphics/Battlers/1050s","Graphics/Battlers/144"],
               "stars" => [1, 3, 2],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/configTransicion",
               "descr" =>  "¿Te ves con suerte y te gusta dejarte el dinero en recompensas casi inalcanzables?.\n\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
               },
 
       "banner_3" => {
-              "name" => "Eventos especiales",
+              "name" => "\nEventos especiales",
               "bg" => "Graphics/Pictures/Banners/electrico",
               "rewards" => ["Graphics/Icons/item013","Graphics/Battlers/796","Graphics/Battlers/145"],
               "stars" => [1, 3, 2],
