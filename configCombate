@@ -4,7 +4,7 @@ BANNERS  = {
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Pictures/1estrella","Graphics/Characters/trainer091","Graphics/Pictures/desafioambienteneutro"],
               "stars" => [6, 6, 6],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/DesafioRomero",
               "descr" =>  "¡Celebra el lanzamiento de la Demo 1 de Pokémon Amatista con este Banner lleno de la Pokédex de Cristalis, y si tienes suerte, hasta conseguirás los starters en su forma Varicolor!. \nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               },
 
