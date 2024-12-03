@@ -1,24 +1,24 @@
 prob = rand(100)
 case prob
-when (0...10) # Tier 1 con un 70%
+when (0...10) # Tier 1 con un 5%
   itemReward(:ICESTONE, 1)
-when (10...20) # Tier 1 con un 70%
+when (10...20) # Tier 1 con un 5%
   itemReward(:MOOMOOMILK, 1)
-when (20...30) # Tier 1 con un 70%
+when (20...30) # Tier 1 con un 5%
   itemReward(:CASTELIACONE, 1)
-when (30...40) # Tier 1 con un 70%
+when (30...40) # Tier 1 con un 5%
  itemReward(:RARECANDY, 2)
-when (40...45) # Tier 2 con un 70%
+when (40...45) # Tier 2 con un 5%
  itemReward(:LUCKYEGG, 2)
-when (45...50) # Tier 2 con un 70%
+when (45...50) # Tier 2 con un 5%
  itemReward(:TM07, 2)
-when (50...55) # Tier 2 con un 70%
+when (50...55) # Tier 2 con un 5%
  itemReward(:TM14, 2)
-when (55...60) # Tier 2 con un 70%
+when (55...60) # Tier 2 con un 5%
   itemReward(:TM119, 2)
-when (60...65) # Tier 2 con un 70%
+when (60...65) # Tier 2 con un 5%
   itemReward(:TM195, 2)
-when (65...70) # Tier 2 con un 70%
+when (65...70) # Tier 2 con un 5%
   itemReward(:TM79, 2)
 when (70...95) #Tier 3 con un 25%
     pokes = [:DELIBIRD, :SMOOCHUM, :SWINUB, :SNOVER, :VANILLITE, :EISCUE, :SNOWYGAST, :CRYOCROSS, :STARYUB, :SNOM, :CHINGLING, :SWABLU, :SNORUNT, :CLEFFA, :COTTONEE]
