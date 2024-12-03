@@ -1,27 +1,27 @@
 BANNERS  = {
       "banner_1" => {
-              "name" => "Ultra Desafio\n",
+              "name" => "Desafios\n",
               "bg" => "Graphics/Pictures/Banners/especial",
               "rewards" => ["Graphics/Battlers/1056","Graphics/Battlers/1176","Graphics/Battlers/1050s"],
-              "stars" => [1, 4, 5],
+              "stars" => [1, 3, 2],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerLanzamiento",
               "descr" =>  "¡Combate en desafiantes combates! ¿Serás capaz de superarlos para recibir increíbles recompensas?\n\nDisponible hasta el <c2=043c3aff>07-1-2025</c2>."
               },
 
       "banner_2" => {
-              "name" => "Ultra Gachapon",
+              "name" => "Gachapon",
               "bg" => "Graphics/Pictures/Banners/navidad",
               "rewards" => ["Graphics/Icons/item231","Graphics/Battlers/986","Graphics/Battlers/144"],
-              "stars" => [2, 4, 5],
-              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerNavidad",
+              "stars" => [1, 3, 2],
+              "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/config",
               "descr" =>  "¿Te ves con suerte y te gusta dejarte el dinero en recompensas casi inalcanzables?.\n\nDisponible hasta el <c2=043c3aff>20-3-2025</c2>."
               },
 
       "banner_3" => {
-              "name" => "Ultra Evento",
+              "name" => "Eventos especiales",
               "bg" => "Graphics/Pictures/Banners/electrico",
               "rewards" => ["Graphics/Icons/item013","Graphics/Battlers/796","Graphics/Battlers/145"],
-              "stars" => [1, 4, 5],
+              "stars" => [1, 3, 2],
               "url" => "https://raw.githubusercontent.com/antoniorojasrodriguez96/GachaAmatista/refs/heads/main/BannerElectrico",
               "descr" =>  "¡Regalos, misiones ocultas, y mucho más, te esperan!.\n\nDisponible hasta el <c2=043c3aff>21-12-2024</c2>."
               }
